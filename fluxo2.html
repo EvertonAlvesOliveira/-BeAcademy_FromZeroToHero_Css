@@ -1,0 +1,75 @@
+<!--
+    ** Combinadores (Combinators) **
+    Combinadores são utilizados para buscar e combinar seletores a fim de aplicar uma estilização.
+
+    TIPOS:
+
+    ** Descendent combinator **
+    Identificado por um espaço entre os seletores.
+    - busca um elemento dentro de outro.
+
+    body ul li
+
+
+    ** Child Combinator **
+    Identificado pelo sinal > entre dois seletores.
+    - Seleciona somente o elemento filho direto do pai;
+    - Elementos depois do filho direto serão desconsiderado;
+
+
+    ** Adjacente sibling combinator **
+    Identificado pelo sinal de (+, ~) entre dois seletores.
+    - Busca somente o elemento do lado direito que é irmão direto da hierarquia.
+-->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <style>
+        /* ul {
+            background: green;
+            color: red;
+        }
+
+        body section div ul li {
+            background: blue;
+            color: yellow;
+        } */
+
+       h1 ~p {
+        color: green;
+       }
+    </style>
+
+</head>
+<body>
+    <!-- <div>
+        <p>Teste</p>
+    </div>
+    <ul>
+        <li>Testando Combinadores</li>
+    </ul>
+    <div>Outro Formato</div>
+    <section>
+        <div>
+            <ul>
+                <li>Outro Marcado</li>
+            </ul>
+        </div>
+    </section> -->
+
+    <h1>Título</h1>
+    <p>Mais um Paragrafo</p>
+
+    <button>Enviar</button>
+
+    <p>Outro Paragrafo</p>
+    
+</body>
+</html>
