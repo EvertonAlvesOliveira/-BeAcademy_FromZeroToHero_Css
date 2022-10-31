@@ -1,0 +1,87 @@
+<!--
+    Trabalhando com Textos
+
+    * Tipografia
+    - Tamanho
+    - Estilo
+    - Força
+
+    Básico de Propriedades de Fonte
+    * font-family - Tipo de fonte do elemento, padrão Sans-serif
+    * font-weight - Peso da fonte, 400, 500, 700, bold
+    * font-style - Normal, Italic, oblique, none
+    * font-size - Tamanho da fonte, px, em, rem, %
+    * font-variant - Normal, small-caps
+    * font-stretch - Nem todas as fonts dão suporte a está propriedade
+    permite manipular caracteres - condensed, normal, expanded
+
+    * letter-spacing: Espaçamento entre letras
+    * word-spacing: Espaçamento de palavras
+    * line-height: Espaço entre linhas (pode ser por unidade ou sem unidade)
+    * text-transform: lowecase, uppercase, (minúscula e maiúscula)
+    capitalize (Casa palavra inicia com letra maiúscula)
+
+    * text-decoration: line, underline, overline, line-through
+                        none
+        atribindo estilos - text-decoration: underline wave, dashed, dotted, double e também cores
+
+    * text-align: center, left, right, justify
+    * text-shadow: text-shadow: 1px 1px 1px red
+                    offset-x, offset-y -blur e cor
+    
+    * shorthand: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif
+                style, variant, weight, stretch, size, line-height, family
+    webfonts:
+    @import
+    @font-face
+    link
+    https://fonts.google.com
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Fontes</title>
+
+</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600;700&display=swap');
+        h1 {
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            font-style: italic;
+           /* font-stretch: condensed; */
+           letter-spacing: 1.4rem;
+           word-spacing: 4rem;
+           text-transform: uppercase;
+           text-decoration: underline wavy #04fa56;
+           text-align: justify;
+           text-shadow: 12px 20px 20px #fa04b0;
+        }
+        
+        h2 {
+            color: blue;
+            line-height: 6rem;
+
+        }
+
+        h3 {
+            color: aqua;
+            /* font: normal 100 4rem/1.2 'Arial', sans-serif; */
+            font-family: 'Oswald', sans-serif;
+            font-weight: bold;
+            -webkit-font-feature-settings: normal;
+        }
+        
+    </style>
+<body>
+    <h1>Testando Fontes</h1>
+    <h2>Outro Teste de Fontes</h2>
+    <h3>Teste Super Combo</h3>
+    
+</body>
+</html>
